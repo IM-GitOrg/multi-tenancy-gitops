@@ -26,9 +26,9 @@ spec:
           name: "banner-env"
 
           ## The background color that should be used for the banner
-          backgroundColor: "'#17354a'"
+          backgroundColor: "'#4a2c17'"
           ## The color of the text that will appear in the banner
-          color: "'#4a2c17'"
+          color: "'#17354a'"
           ## The location of the banner. Options: BannerTop, BannerBottom, BannerTopBottom
           location: BannerTopBottom
           ## The text that should be displayed in the banner. This value is required for the banner to be created
