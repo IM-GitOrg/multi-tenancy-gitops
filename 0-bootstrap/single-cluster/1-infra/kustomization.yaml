@@ -25,7 +25,7 @@ resources:
 #- argocd/namespace-baas.yaml
 #- argocd/namespace-db2.yaml
 #- argocd/namespace-mq.yaml
-- argocd/namespace-b2bi-prod.yaml
+#- argocd/namespace-b2bi-prod.yaml
 - argocd/namespace-b2bi-nonprod.yaml
 #- argocd/namespace-pem.yaml
 #- argocd/namespace-ssp.yaml
@@ -34,8 +34,8 @@ resources:
 #- argocd/serviceaccounts-tools.yaml
 #- argocd/serviceaccounts-db2.yaml
 #- argocd/serviceaccounts-mq.yaml
-- argocd/serviceaccounts-b2bi-prod.yaml
-#- argocd/serviceaccounts-b2bi-nonprod.yaml
+#- argocd/serviceaccounts-b2bi-prod.yaml
+- argocd/serviceaccounts-b2bi-nonprod.yaml
 #- argocd/serviceaccounts-pem.yaml
 #- argocd/serviceaccounts-sccm.yaml
 - argocd/sfg-b2bi-clusterwide.yaml
@@ -59,6 +59,4 @@ patches:
     - op: add
       path: /spec/source/targetRevision
       value: master
-metadata:
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io 
+
