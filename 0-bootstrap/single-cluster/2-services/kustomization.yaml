@@ -184,6 +184,3 @@ patches:
       value:
         name: spec.channel
         value: v1.1
- metadata:
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
